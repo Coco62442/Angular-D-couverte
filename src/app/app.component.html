@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Le nombre de festival est de {{ this.festivals.length }}
+</p>
+
+<div>
+  <h3>Liste des festivals: </h3>
+  <ul>
+  <li *ngFor="let festival of festivals">{{festival.name}}</li>
+  </ul>
+</div>
+
+<button (click)=add()>ADD</button>
+<button (click)=modif()>MODIF</button>
